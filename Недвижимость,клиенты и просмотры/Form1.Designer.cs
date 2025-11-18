@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.адрес = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.тип = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.цена = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.статус = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -42,36 +38,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.адрес,
-            this.тип,
-            this.цена,
-            this.статус});
             this.dataGridView1.Location = new System.Drawing.Point(-4, 1);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(441, 262);
+            this.dataGridView1.Size = new System.Drawing.Size(519, 262);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // адрес
-            // 
-            this.адрес.HeaderText = "адрес";
-            this.адрес.Name = "адрес";
-            // 
-            // тип
-            // 
-            this.тип.HeaderText = "тип";
-            this.тип.Name = "тип";
-            // 
-            // цена
-            // 
-            this.цена.HeaderText = "цена";
-            this.цена.Name = "цена";
-            // 
-            // статус
-            // 
-            this.статус.HeaderText = "статус";
-            this.статус.Name = "статус";
             // 
             // button1
             // 
@@ -121,10 +92,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn адрес;
-        private System.Windows.Forms.DataGridViewTextBoxColumn тип;
-        private System.Windows.Forms.DataGridViewTextBoxColumn цена;
-        private System.Windows.Forms.DataGridViewTextBoxColumn статус;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
