@@ -15,6 +15,19 @@ namespace Недвижимость_клиенты_и_просмотры
         public Form1()
         {
             InitializeComponent();
+            button3.Text = "Показать историю \n просмотров";
+            dBService = new DBService(
+                "Data Source = Cab109,49172;"
+                    + "Initial Catalog = Nedviga;"
+                    + "Integrated Security = True"
+            );
+            dataGridView1.DataSource = dBService.GetAvailableProperties();
+            dataGridView1.Columns["PropertyId"].Visible = false;
+        }
+
+        public Form1()
+        {
+            InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e) { }
