@@ -22,7 +22,7 @@ namespace Недвижимость_клиенты_и_просмотры
                     + "Initial Catalog = Nedviga;"
                     + "Integrated Security = True"
             );
-            dataGridView1.DataSource = dBService.GetAvailableProperties(); 
+            dataGridView1.DataSource = dBService.GetAvailableProperties(); // вывод базы в грид уэээ
             dataGridView1.Columns["PropertyId"].Visible = false;
         }
 
