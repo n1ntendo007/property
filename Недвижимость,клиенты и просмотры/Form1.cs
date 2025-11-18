@@ -13,6 +13,7 @@ namespace Недвижимость_клиенты_и_просмотры
     public partial class Form1 : Form
     {
         private readonly DBService dBService;
+
         public Form1()
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace Недвижимость_клиенты_и_просмотры
                     + "Integrated Security = True"
             );
             dataGridView1.DataSource = dBService.GetAvailableProperties(); // вывод базы в грид уэээ
-            dataGridView1.Columns["PropertyId"].Visible = false;
+            dataGridView1.Columns["PropertyId"].Visible = false; // priv
         }
 
         private void Form1_Load(object sender, EventArgs e) { }
