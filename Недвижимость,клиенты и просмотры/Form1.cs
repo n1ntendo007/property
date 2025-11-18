@@ -12,6 +12,7 @@ namespace Недвижимость_клиенты_и_просмотры
 {
     public partial class Form1 : Form
     {
+        private readonly DBService dBService;
         public Form1()
         {
             InitializeComponent();
@@ -21,13 +22,8 @@ namespace Недвижимость_клиенты_и_просмотры
                     + "Initial Catalog = Nedviga;"
                     + "Integrated Security = True"
             );
-            dataGridView1.DataSource = dBService.GetAvailableProperties();
+            dataGridView1.DataSource = dBService.GetAvailableProperties(); 
             dataGridView1.Columns["PropertyId"].Visible = false;
-        }
-
-        public Form1()
-        {
-            InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e) { }
